@@ -1,0 +1,190 @@
+.domain-con{
+    background: var(--grey-color);
+}
+.domains-price-con ul {
+    gap: 15px;
+    display: grid;
+    align-items: center;
+    grid-template-columns: 17.7% 17.7% 17.7% 17.7%;
+    justify-content: center;
+    margin-bottom: 33px;
+}
+.domains-price-con ul li span {
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 18px;
+    display: block;
+    color: var(--accent--color);
+    margin-top: auto;
+}
+.domain-serach-con {
+    gap: 10px;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 38px;
+}
+.domains-price-con ul li {
+    display: flex;
+    text-align: center;
+    border-radius: 10px;
+    padding: 22px 29px 17px 30px;
+    background: var(--secondary--color);
+    border: 1px solid rgb(0 123 255 / 20%);
+    height: 99px;
+    flex-direction: column;
+}
+.domains-price-con ul li img{
+    width: auto;
+    margin: 0 auto;
+}
+.domain-serach-con input {
+    width: 51.4%;
+    font-size: 16px;
+    line-height: 16px;
+    padding: 18px 25px 19px 53px;
+    border-radius: 10px;
+    color: var(--text--color);
+    border: 1px solid rgb(0 123 255 / 20%);
+    background: var(--secondary--color) url(../images/domain-input-icon.png) no-repeat 3.3% 50.1%;
+}
+.domain-serach-con input:focus,
+.domain-search-btns button:focus{
+    outline: none;
+}
+.domain-serach-con input::placeholder{
+    font-size: 16px;
+    line-height: 16px;
+    color: var(--text--color);
+}
+.domain-search-btns {
+    gap: 10px;
+    display: flex;
+}
+.domain-search-btns button {
+    width: 110px;
+    height: 60px;
+    cursor: pointer;
+    font-size: 16px;
+    line-height: 16px;
+    border-radius: 10px;
+    text-align: center;
+}
+.search-btn{
+    border: none;
+    color: var(--secondary--color);
+    background: var(--accent--color);
+}
+.search-btn:hover{
+    background: var(--primary--color);
+}
+.transfer-btn{
+    background: #00238a;
+    color: var(--secondary--color);
+    border: 1px solid #00238a;
+}
+.transfer-btn:hover{
+    color: var(--secondary--color);
+    background: var(--accent--color);
+    border-color: var(--accent--color);
+}
+.pricing-btn a {
+    font-size: 16px;
+    line-height: 16px;
+    border-radius: 10px;
+    display: inline-block;
+    font-weight: 700;
+}
+.pricing-btn {
+    text-align: center;
+}
+/* RESPONSIVENESS */
+@media screen and (max-width: 1440px) {
+    .domain-serach-con {
+        margin-bottom: 25px;
+    }
+}
+@media screen and (max-width: 1199px) {
+    .domains-price-con ul {
+        grid-template-columns: 18.4% 18.4% 18.4% 18.4%;
+        margin-bottom: 22px;
+    }
+    .domains-price-con ul li {
+        padding: 17px 15px;
+    }
+    .domain-serach-con input {
+        padding: 15px 25px 16px 53px;
+    }
+    .domain-search-btns button {
+        height: 54px;
+    }
+    .domain-serach-con {
+        margin-bottom: 20px;
+    }
+}
+@media screen and (max-width: 991px) {
+    .domain-search-btns button {
+        height: 48px;
+        width: 100px;
+    }
+    .domain-serach-con input {
+        padding: 12px 25px 13px 42px;
+    }
+    .domains-price-con {
+        grid-template-columns: 100%;
+    }
+    .domains-price-con ul li {
+        padding: 17px 8px;
+        height: 90px;
+    }
+    .domains-price-con ul li span {
+        font-size: 16px;
+        line-height: 16px;
+    }
+    .pricing-btn{
+        text-align: center;
+    }
+    .domains-price-con ul {
+        gap: 22px;
+    }
+}
+@media screen and (max-width: 767px) {
+    .domain-serach-con {
+        margin-bottom: 20px;
+        flex-direction: column;
+    }
+    .domain-serach-con input {
+        width: 100%;
+    }
+    .domain-search-btns {
+        justify-content: center;
+    }
+    .domains-price-con ul {
+        justify-content: center;
+        grid-template-columns: 48% 48%;
+    }
+    .pricing-btn a {
+        font-size: 14px;
+        line-height: 14px;
+    }
+    .domain-search-btns button {
+        height: 42px;
+        width: 120px;
+        font-size: 14px;
+        line-height: 14px;
+    }
+    .domains-price-con ul li span {
+        font-size: 14px;
+        line-height: 14px;
+    }
+    .domains-price-con ul {
+        gap: 20px;
+    }
+}
+@media screen and (max-width: 575px) {
+    .domain-serach-con input {
+        padding: 12px 25px 13px 43px;
+    }
+    .domains-price-con ul {
+        gap: 12px;
+    }
+}

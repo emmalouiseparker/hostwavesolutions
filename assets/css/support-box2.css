@@ -1,0 +1,196 @@
+.support-box2 {
+    gap: 30px;
+    display: grid;
+    margin-left: -78px;
+    grid-template-columns: 28.5% 51.61% 27%;
+}
+.support-box2-img figure img {
+    box-shadow: 0 0 60px rgb(0 123 255 / 10%);
+}
+.support-box2-img figure:last-child {
+    right: 0;
+    top: -110px;
+    position: absolute;
+}
+.support-box2-img {
+    position: relative;
+    margin-top: 107px;
+}
+.support-box2-img figure:first-child{
+    text-align: left;
+} 
+.support-box-img2 figure:first-child{
+    text-align: right;
+}
+.support-box-img2 figure:last-child{
+    left: 0;
+}
+.support-con2 .support-box-title p {
+    font-size: 16px;
+    margin-bottom: 32px;
+    line-height: 28px;
+    padding-right: 0;
+}
+.support-btn a{
+    font-size: 16px;
+    line-height: 16px;
+    padding: 17px 40px;
+    border-radius: 10px;
+    display: inline-block;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: var(--secondary--color);
+    background: var(--accent--color);
+}
+.support-btn a:hover{
+    color: var(--secondary--color);
+    background: var(--primary--color);
+}
+.support-con2 figure img {
+    box-shadow: 0 0 60px rgb(0 123 255 / 10%);
+}
+.support-con2 .image {
+    top: 100px;
+}
+.support-con2 .image1{
+    left: -92px;
+    z-index: 1;
+}
+.support-con2 .image3{
+    right: -78px;
+    z-index: 1;
+}
+.support-con2 .image2{
+    left: -150px;
+}
+.support-con2 .image4{
+    right: -150px;
+}
+
+/* RESPONSIVE */
+@media only screen and (max-width: 1440px) {
+    .support-box2 {
+        margin-left: 0;
+        grid-template-columns: 24.5% 46.61% 24%;
+    }
+    .support-btn a {
+        padding: 17px 30px;
+    }
+    .support-box-img2 figure:last-child {
+        left: -40px;
+        right: auto;
+    }
+    .support-box2-img figure:last-child {
+        right: -10px;
+    }
+    .support-con2 .image1{
+        left: 15px;
+    }
+    .support-con2 .image3{
+        right: 15px;
+    }
+    .support-con2 .image2{
+        left: -15px;
+    }
+    .support-con2 .image4{
+        right: -15px;
+    }
+    .support-box-title {
+        padding: 0 80px;
+    }
+
+}
+@media only screen and (max-width: 1199px) {
+    .support-box2 {
+        grid-template-columns: 24.5% 42.61% 26%;
+    }
+    .support-con2 .support-box-title p {
+        font-size: 14px;
+        margin-bottom: 18px;
+        line-height: 26px;
+    }
+    .support-con2 .image2{
+        left: 0;
+    }
+    .support-con2 .image4{
+        right: 0;
+    }
+    .support-box-title {
+        padding: 0 30px;
+    }
+}
+@media only screen and (max-width: 991px) {
+    .support-con2 .support-box-title{
+        order: 3;
+        grid-column: 1 / -1;
+    }
+    .support-box2 {
+        margin-left: 0;
+        grid-template-columns: 48% 48%;
+    }
+    .support-con2 {
+        padding-bottom: 115px !important;
+    }
+    .support-con2 .support-box-title{
+        margin-bottom: 30px;
+    }
+    .support-con2 .image {
+        top: 50px;
+    }
+    .support-con2 .image1{
+        left: 20px;
+        position: relative !important;
+    }
+    .support-con2 .image3{
+        right: 20px;
+        position: relative !important;
+    }
+    .support-box-title {
+        padding: 0;
+    }
+}
+@media only screen and (max-width: 767px) {
+    .support-box-img2{
+        display: none;
+    }
+    .support-box2 {
+        margin-left: 0;
+        grid-template-columns: 100%;
+    }
+    .support-box2-img {
+        position: relative;
+        width: 360px;
+        margin: 107px auto 0;
+    }
+    .support-con2 {
+        padding-bottom: 100px !important;
+    }
+    .support-con2 .support-box-title{
+        margin-bottom: 20px;
+    }
+    .support-con2 .image1 {
+        left: 30px;
+    }
+    .support-con2 .image2 {
+        left: 115px;
+    }
+    .support-con2 .support_wrapper{
+        text-align: center;
+    }
+    .support-con2 .support_wrapper2{
+        display: none;
+    }
+}
+@media only screen and (max-width: 575px) {
+    .support-box2-img {
+        width: 270px;
+    }
+    .support-con2 .support_wrapper {
+        width: 330px;
+        margin: 0 auto;
+    }
+    .support-con2 .image2 {
+        left: 10px;
+    }
+}
+/* RESPONSIVE */

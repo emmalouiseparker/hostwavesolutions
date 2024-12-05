@@ -1,0 +1,194 @@
+.dedicated-hosting-feature{
+    background: var(--light-grey-color);
+}
+.dedicated-server-box > ul .dedicated-server-data{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.dedicated-server-item{
+    margin: 0 auto 30px;
+    border-radius: 20px;
+    padding-right: 30px;
+    border: 1px solid rgb(0 123 255 / 20%);
+}
+.dedicated-server-data h3 {
+    font-size: 20px;
+    margin-bottom: 0;
+    font-weight: 700;
+    line-height: 22px;
+    margin-right: 44px;
+    color: var(--secondary--color);
+    background: var(--accent--color);
+    height: 107px;
+    border-radius: 20px 0 0 20px;
+    padding: 10px 30px;
+    width: 20.04%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.dedicated-server-data h3 span {
+    font-size: 16px;
+    line-height: 16px;
+    padding-top: 15px;
+    font-weight: 400;
+}
+.dedicated-server-data ul {
+    width: 36.5%;
+    display: flex;
+    gap: 21px 37px;
+    flex-wrap: wrap;
+    margin-right: 58px;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.dedicated-server-data ul li {
+    font-size: 16px;
+    text-align: left;
+    line-height: 14px;
+    padding-left: 26px;
+    position: relative;
+    color: var(--primary--color);
+}
+.dedicated-server-data ul li:after{
+    top: 0;
+    left: 0;
+    font-weight: 600;
+    content: "\f00c";
+    position: absolute;
+    color: var(--accent--color);
+    font-family: "Font Awesome 5 free";
+}
+.dedicated-server-data .price-value{
+    margin-bottom: 0;
+}
+.dedicated-server-data .month-price small {
+    font-size: 14px;
+    line-height: 14px;
+    color: var(--accent--color);
+}
+.dedicated-server-data .generic-btn a {
+    font-size: 16px;
+    line-height: 16px;
+    border-radius: 10px;
+    text-decoration: none;
+    padding: 16px 40px 18px;
+    color: var(--secondary--color);
+    background: var(--accent--color);
+    display: inline-block;
+}
+.dedicated-server-data .generic-btn a:hover{
+    color: var(--secondary--color);
+    background: var(--primary--color);
+}
+.dedicated-server-box ul li:last-child{
+    margin-bottom: 0;
+}
+.dedicated-server-data ul li:nth-child(2){
+    width: 156px;
+}
+.dedicated-server-data .price-value {
+    font-size: 42px;
+    font-weight: 700;
+    line-height: 42px;
+    padding-left: 21px;
+    margin-right: 52px;
+    position: relative;
+    color: var(--accent--color);
+}
+.dedicated-server-data .price-value span {
+    left: 0;
+    top: 6px;
+    font-size: 20px;
+    line-height: 20px;
+    position: absolute;
+}
+.dedicated-server-data .month-price {
+    margin-left: 0;
+    font-size: 20px;
+    line-height: 20px;
+    display: inline-block;
+}
+/* MEDIA RESPONSIVE */
+@media only screen and (max-width: 1199px) {
+    .dedicated-server-data ul {
+        width: 41.5%;
+        margin-right: 0;
+    }
+    .dedicated-server-data h3 {
+        margin-right: 4px;
+        width: 18.04%;
+    }
+    .dedicated-server-data ul li {
+        font-size: 14px;
+        padding-left: 20px;
+    }
+    .dedicated-server-data .price-value {
+        font-size: 38px;
+        line-height: 38px;
+        padding-left: 21px;
+        margin-right: 0;
+    }
+    .dedicated-server-data .generic-btn a {
+        font-size: 14px;
+        line-height: 14px;
+        padding: 12px 26px 13px;
+    }
+    .dedicated-server-data ul li:nth-child(2) {
+        width: 134px;
+    }
+}
+@media only screen and (max-width: 991px) {
+    .dedicated-server-box > ul{
+        gap: 30px;
+        display: grid;
+        grid-template-columns: 48% 48%;
+    }
+    .dedicated-server-item {
+        width: 100%;
+        margin-bottom: 0;
+        padding: 28px 60px;
+    }
+    .dedicated-server-box > ul .dedicated-server-data {
+        gap: 30px;
+        flex-direction: column;
+    }
+    .dedicated-server-data ul {
+        margin-right: 0;
+        flex-direction: column;
+        width: auto;
+        gap: 15px;
+    }
+    .dedicated-server-data h3 {
+        margin-right: 0;
+        width: auto;
+        background: transparent;
+        color: #000;
+        text-align: center;
+        height: auto;
+        padding: 0;
+    }
+}
+@media only screen and (max-width: 767px) {
+    .dedicated-server-item {
+        padding: 28px 20px;
+    }
+    .dedicated-server-data .price-value {
+        font-size: 34px;
+        line-height: 34px;
+    }
+    .dedicated-server-box > ul {
+        gap: 19px;
+    }
+}
+@media only screen and (max-width: 575px) {
+    .dedicated-server-item {
+        width: 330px;
+        margin: 0 auto;
+        padding: 28px 50px;
+    }
+    .dedicated-server-box > ul {
+        grid-template-columns: 100%;
+    }
+}

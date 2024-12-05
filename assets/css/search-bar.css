@@ -1,0 +1,145 @@
+body.search-open {
+    overflow: hidden;
+}
+.search-box.search-elem {
+    margin: 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 100;
+    background: rgb(0 0 0 / 80%);
+    transition: all 0.5s ease-in-out;
+    -webkit-transform: scale(0);
+    -ms-transform: scale(0);
+    transform: scale(0);
+}
+.search-box.search-elem .inner {
+    top: 50%;
+    width: 57.815%;
+    margin: 0 auto;
+    position: relative;
+    transform: translateY(-50%);
+}
+.search-box.search-elem.search-open {
+    -webkit-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1);
+}
+.search-input-box{
+    position: relative;
+}
+.search-input-box input {
+    width: 100%;
+    border: none;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 24px;
+    border-radius: 10px;
+    padding: 29px 180px 29px 30px;
+    color: var(--primary--color);
+    background: var(--secondary--color);
+}
+.search-input-box input:focus{
+    outline: none;
+}
+.search-input-box input::placeholder{
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 22px;
+    color: var(--primary--color);
+}
+.search-input-box button {
+    top: 50%;
+    right: 10px;
+    border: none;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 14px;
+    position: absolute;
+    padding: 23px 41px;
+    border-radius: 10px;
+    text-transform: uppercase;
+    transform: translateY(-50%);
+    color: var(--secondary--color);
+    background: var(--accent--color);
+    transition: all 0.5s ease-in-out;
+}
+.search-input-box button:hover{
+    background: var(--primary--color);
+}
+.close-btn {
+    top: 87px;
+    right: 40px;
+    border: none;
+    cursor: pointer;
+    font-size: 30px;
+    position: absolute;
+    background: transparent;
+    color: var(--secondary--color);
+}
+.close-btn i:hover{
+    color: var(--accent--color);
+}
+.close-btn:focus,.search-input-box button{
+    outline: none;
+}
+/* RESPONSIVE */
+@media only screen and (max-width: 1440px) {}
+@media only screen and (max-width: 1199px) {
+    .search-box.search-elem .inner {
+        width: 87.815%;
+    }
+}
+@media only screen and (max-width: 991px) {
+    .search-input-box input {
+        padding: 22px 170px 22px 26px;
+    }
+    .search-input-box button {
+        padding: 18px 30px;
+    }
+    .close-btn {
+        right: 15px;
+    }
+}
+@media only screen and (max-width: 767px) {
+    .search-input-box input{
+        font-size: 18px;
+        line-height: 20px;
+        padding: 22px 140px 22px 26px;
+    }
+    .search-input-box input::placeholder{
+        font-size: 18px;
+        line-height: 20px;
+    }
+    .close-btn {
+        font-size: 20px;
+    }
+}
+@media only screen and (max-width: 575px) {
+    .search-input-box button {
+        top: 0;
+        font-size: 12px;
+        line-height: 12px;
+        padding: 16px 27px;
+        position: relative;
+        transform: translateY(0);
+    }
+    .search-input-box input {
+        font-size: 16px;
+        line-height: 18px;
+        padding: 15px 15px;
+        margin-bottom: 10px;
+        text-align: left;
+    }
+    .search-input-box input::placeholder{
+        font-size: 16px;
+        line-height: 18px;
+    }
+    .search-input-box {
+        text-align: center;
+    }
+}
+/* RESPONSIVE */

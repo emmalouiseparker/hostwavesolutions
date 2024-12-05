@@ -1,0 +1,120 @@
+.feature-con{
+    background: #00238a;
+}
+.feature-box {
+    gap: 30px;
+    display: grid;
+    grid-template-columns: 48.65% 48.65%;
+}
+.feature-con .generic-title2 *{
+    color: var(--secondary--color);
+}
+.feature-box-item {
+    padding: 23px 30px;
+    border-radius: 10px;
+    position: relative;
+    background: var(--secondary--color);
+}
+.feature-box-item:hover{
+    background: var(--accent--color);
+}
+.feature-box-item:hover .feature-box-content h4,
+.feature-box-item:hover .feature-box-content p{
+    color: var(--secondary--color);
+}
+.feature-box-item figure img{
+    transition: all 0.5s ease-in-out;
+}
+.feature-box-item:hover figure{
+    background: var(--secondary--color);
+} 
+.feature-box-item:hover figure img{
+    filter: none;
+}
+.feature-box-item:hover figure img{
+    transform: translateY(5px);
+}
+.feature-box-content h4{
+    margin-bottom: 18px;
+    color: var(--primary--color);
+}
+.feature-box-content {
+    margin-left: 108px;
+}
+.feature-box-content p{
+    margin-top: auto;
+    color: var(--text--color);
+}
+.feature-box-item figure {
+    left: 30px;
+    width: 80px;
+    height: 80px;
+    background: var(--accent--color);
+    border-radius: 10px;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 28px;
+}
+.feature-box-item figure img{
+    filter: brightness(0) invert(1);
+}
+.feature-box-item:hover figure img{
+    filter: brightness(0) saturate(100%) invert(44%) sepia(85%) saturate(5304%) hue-rotate(199deg) brightness(101%) contrast(105%);
+}
+/* RESPONSIVE */
+@media screen and (max-width: 1199px) {
+    .feature-box {
+        gap: 25px;
+    }
+    .feature-box-content {
+        margin-left: 92px;
+    }
+    .feature-box-content h4 {
+        margin-bottom: 10px;
+    }
+    .feature-box-item figure {
+        width: 70px;
+        height: 70px;
+    }
+}
+@media screen and (max-width: 991px) {
+    .feature-box-content h4 {
+        margin-bottom: 12px;
+    }  
+    .feature-box-item figure {
+        top: 0;
+        left: 0;
+        position: relative;
+        margin-bottom: 10px !important;
+        display: inline-block;
+        line-height: 70px;
+    }
+    .feature-box-content {
+        margin-left: 0;
+    }
+    .feature-box {
+        gap: 20px;
+    }
+    .feature-box-item {
+        text-align: center;
+    }
+}
+@media screen and (max-width: 767px) {
+    .feature-box-item {
+        padding: 15px;
+    }
+    .feature-box {
+        gap: 20px;
+        grid-template-columns: 48% 48%;
+    }
+    .feature-box-content h4 {
+        margin-bottom: 8px;
+    }
+}
+@media screen and (max-width: 575px) {
+    .feature-box {
+        grid-template-columns: 100%;
+    }
+}

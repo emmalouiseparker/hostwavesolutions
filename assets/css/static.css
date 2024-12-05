@@ -1,0 +1,112 @@
+.static-con {
+    overflow: hidden;
+    margin-top: -215px;
+    position: relative;
+    padding: 270px 0 100px;
+    background: #00238a;
+}
+.static-con::after{
+    left: 0;
+    bottom: 0;
+    content: "";
+    width: 158px;
+    height: 315px;
+    position: absolute;
+    background: url(../images/static-lft-shape.png) no-repeat center;
+}
+.static-con::before{
+    right: 0;
+    bottom: 0;
+    content: "";
+    width: 334px;
+    height: 514px;
+    position: absolute;
+    background: url(../images/static-rt-shape.png) no-repeat center;
+}
+.static-value {
+    font-size: 42px;
+    font-weight: 700;
+    line-height: 42px;
+    display: inline-block;
+    color: var(--secondary--color);
+}
+.static-box-item{
+    text-align: center;
+}
+.static-box-item span{
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 18px;
+    color: var(--secondary--color);
+}
+.static-box {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: 23% 23% 23% 23%;
+}
+.static-box-item > div {
+    margin-bottom: 17px;
+}
+/* RESPONSIVE */
+@media only screen and (max-width: 1440px) {
+    .static-con::after {
+        width: 98px;
+        background-size: contain;
+    }
+    .static-value {
+        font-size: 38px;
+        line-height: 38px;
+    }
+}
+@media only screen and (max-width: 1199px) {
+    .static-value {
+        font-size: 34px;
+        line-height: 34px;
+    }
+    .static-box-item > div {
+        margin-bottom: 12px;
+    }
+    .static-con {
+        margin-top: -165px;
+        padding: 200px 0 70px;
+    }
+}
+@media only screen and (max-width: 991px) {
+    .static-box-item span {
+        font-size: 16px;
+        line-height: 16px;
+    }
+    .static-con::before {
+        width: 164px;
+        height: 294px;
+        background-size: contain;
+    }
+    .static-value {
+        font-size: 30px;
+        line-height: 30px;
+    }
+}
+@media only screen and (max-width: 767px) {
+    .static-box {
+        gap: 30px;
+        grid-template-columns: 48% 48%;
+    }
+    .static-con::before,.static-con::after{
+        display: none;
+    }
+    .static-con {
+        margin-top: -105px;
+        padding: 134px 0 60px;
+    }
+}
+@media only screen and (max-width: 575px) {
+    .static-box-item span {
+        font-size: 14px;
+        line-height: 14px;
+    }
+    .static-con {
+        margin-top: -75px;
+        padding: 114px 0 40px;
+    }
+}
+/* RESPONSIVE */

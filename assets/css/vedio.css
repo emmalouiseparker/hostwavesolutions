@@ -1,0 +1,117 @@
+.video-sec{
+    z-index: 1;
+    position: relative;
+}
+.vedio-sub-img img {
+    width: 100%;
+    border-radius: 10px;
+}
+.btn-outer a {
+    display: inline-block;
+}
+.btn-outer {
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+}
+#fade1 {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: .80;
+    z-index: 1001;
+    display: none;
+    position: fixed;
+    filter: alpha(opacity=80);
+    background-color: black;
+}
+#fade2 {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: .80;
+    z-index: 1001;
+    display: none;
+    position: fixed;
+    filter: alpha(opacity=80);
+    background-color: black;
+}
+
+#light iframe {
+    width: 100%;
+    height: 500px;
+}
+
+#light2, #light {
+    top: 70%;
+    left: 50%;
+    display: none;
+    z-index: 1002;
+    position: absolute;
+    margin-top: -180px;
+    transform: translate(-50%, -50%);
+}
+#light {
+    display: none;
+    width: 80%;
+    margin: 50px auto;
+    padding: 10px;
+    border: 1px solid #ccc;
+    background: #fff;
+}
+
+#boxclose {
+    top: -10px;
+    width: 40px;
+    right: -10px;
+    height: 40px;
+    padding: 0;
+    /* padding: 7px 10px 10px; */
+    /* display: flex;
+    align-items: center; */
+    text-align: center;
+    z-index: 1002;
+    cursor: pointer;
+    font-size: 30px;
+    font-weight: bold;
+    line-height: 30px;
+    position: absolute;
+    border-radius: 50%;
+    /* justify-content: center; */
+    color: var(--secondary--color);
+    background: var(--accent--color);
+}
+
+.boxclose:before {
+    content: "×";
+}
+
+#fade1:hover~#boxclose {
+    display: none;
+}
+
+.test:hover~.test2 {
+    display: none;
+}
+/* RESPONSIVE */
+@media only screen and (max-width: 1199px) {
+    .video-wrap img{
+        width: 80px;
+        height: 80px;
+    }
+}
+@media only screen and (max-width: 767px) {
+    .video-wrap img {
+        width: 60px;
+        height: 60px;
+    }
+    
+}
+/* RESPONSIVE */

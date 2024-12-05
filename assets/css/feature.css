@@ -1,0 +1,210 @@
+
+.feature-box {
+    gap: 30px;
+    display: grid;
+    padding: 50px;
+    grid-template-columns: 61.6%;
+    background: #00238a;
+}
+.feature-txt {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    background: var(--grey-color);
+}
+.feature-main-content{
+    width: 563px;
+    margin-left: auto;
+    padding-right: 114px;
+}
+.feature-box-item {
+    padding: 23px 30px;
+    border-radius: 10px;
+    position: relative;
+}
+.feature-box-item:hover{
+    background: rgb(255 255 255 / 5%);
+}
+.feature-box-item figure img{
+    transition: all 0.5s ease-in-out;
+}
+.feature-box-item:hover figure img{
+    transform: translateY(5px);
+}
+.feature-box-content h4{
+    margin-bottom: 18px;
+}
+.feature-box-content *{
+    color: var(--secondary--color);
+}
+.feature-box-content {
+    margin-left: 108px;
+}
+.feature-box-content p{
+    margin-top: auto;
+}
+.feature-box-item figure {
+    left: 30px;
+    width: 80px;
+    height: 80px;
+    background: var(--accent--color);
+    border-radius: 10px;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 28px;
+}
+.feature-box-item figure img{
+    filter: brightness(0) invert(1);
+}
+.feature-box-outer {
+    display: grid;
+    align-items: center;
+    justify-content: space-between;
+    grid-template-columns: 49.55% 50.447%;
+}
+.feature-main-content span{
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 20px;
+    margin-bottom: 40px;
+    color: var(--accent--color);
+}
+.feature-main-content h3{
+    margin-bottom: 15px;
+}
+.feature-main-content p {
+    margin-bottom: 24px;
+}
+.feature-btn a {
+    font-size: 16px;
+    line-height: 16px;
+    padding: 17px 29px;
+    border-radius: 10px;
+    text-decoration: none;
+    display: inline-block;
+    color: var(--secondary--color);
+    background: var(--accent--color);
+}
+.feature-btn a:hover{
+    color: var(--secondary--color);
+    background: var(--primary--color);
+}
+/* RESPONSIVE */
+@media screen and (max-width: 1600px) {
+    .feature-box {
+        grid-template-columns: 100%;
+    }
+}
+@media screen and (max-width: 1440px) {
+    .feature-box {
+        padding: 30px;
+    }
+    .feature-main-content {
+        width: 472px;
+        padding-right: 40px;
+    }
+}
+@media screen and (max-width: 1199px) {
+    .feature-box {
+        gap: 25px;
+    }
+    .feature-box-content {
+        margin-left: 92px;
+    }
+    .feature-box-content h4 {
+        margin-bottom: 10px;
+    }
+    .feature-box-item figure {
+        width: 70px;
+        height: 70px;
+    }
+    .feature-main-content {
+        padding-right: 0;
+        padding-left: 15px;
+    }
+    .feature-main-content span {
+        font-size: 18px;
+        line-height: 18px;
+        margin-bottom: 20px;
+    }
+    .feature-btn a {
+        font-size: 14px;
+        line-height: 14px;
+    }
+}
+@media screen and (max-width: 991px) {
+    .feature-box {
+        padding: 0;
+    }
+    .feature-main-content h3 {
+        margin-bottom: 10px;
+    }
+    .feature-btn a {
+        padding: 15px 29px 16px;
+    }
+    .feature-box-content h4 {
+        margin-bottom: 12px;
+    }  
+    .feature-box-item figure {
+        top: 0;
+        left: 0;
+        position: relative;
+        margin-bottom: 10px !important;
+    }  
+    .feature-main-content {
+        width: 363px;
+    }
+    .feature-box-content {
+        margin-left: 0;
+    }
+    .feature-box {
+        gap: 20px;
+    }
+}
+@media screen and (max-width: 767px) {
+    .feature-box-item {
+        padding: 15px;
+        text-align: center;
+    }
+    .feature-box {
+        gap: 10px;
+    }
+    .feature-box-content h4 {
+        margin-bottom: 8px;
+    }
+    .feature-box-outer {
+        grid-template-columns: 100%;
+    }
+    .feature-main-content {
+        width: 100%;
+    }
+    .feature-main-content {
+        padding: 30px 15px;
+        text-align: center;
+    }
+    .feature-box-item figure {
+        display: inline-block;
+        line-height: 70px;
+    }
+    .feature-main-content p {
+        margin-bottom: 16px;
+    }
+    .feature-main-content span {
+        font-size: 16px;
+        line-height: 16px;
+        margin-bottom: 14px;
+    }
+    .feature-btn a {
+        padding: 13px 18px 14px;
+    }
+    .feature-box {
+        padding: 30px 15px;
+    }
+}
+@media screen and (max-width: 575px) {
+    .feature-box {
+        grid-template-columns: 100%;
+    }
+}
